@@ -1,0 +1,67 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  max-width: 80rem;
+  min-height: 100vh;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 0 0 2rem;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 0.4em;
+  /* background-color: blueviolet; */
+  background-image: url("./assets/images/banner-coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 2em;
+  margin: 3rem 0;
+  /* height: 20%; */
+}
+
+.signup::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: bolder;
+  color: cornflowerblue;
+}
+
+.signupBody p {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+.signupHide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background: none;
+  padding: 0.5em 0.8em;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.signupHide:hover {
+  text-decoration: underline;
+}
